@@ -145,7 +145,7 @@ async function scrapeData() {
                 href: link.href
             });
 
-            // optional: tiny jitter between scraping individual items
+            // tiny jitter between scraping individual items. This is being done to mimin more human like behaviour.
             await delay(Math.floor(Math.random() * 200) + 100); 
         }
 
