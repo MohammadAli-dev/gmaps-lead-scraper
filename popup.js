@@ -123,7 +123,7 @@ async function scrapeData() {
             }
 
             // Extract phone
-            let phoneRegex = /(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/;
+            let phoneRegex = /(?:\+91|91|0)?[-\s]?[1-9](?:\d[-\s]?){9}/;
             let phoneMatch = container.textContent.match(phoneRegex);
             phone = phoneMatch ? phoneMatch[0] : '';
 
